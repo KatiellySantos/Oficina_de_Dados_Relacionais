@@ -1,5 +1,5 @@
 ```sql
-# 🎭 Sistema de Gerenciamento de Eventos - Evento360
+🎭 Sistema de Gerenciamento de Eventos - Evento360
 
 Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas
 a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada para garantir eficiência
