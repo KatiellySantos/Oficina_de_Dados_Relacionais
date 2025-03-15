@@ -1,4 +1,5 @@
-# 💡️ Sistema de Gerenciamento de Estoque - Controle Inteligente
+```sql
+💡️ Sistema de Gerenciamento de Estoque - Controle Inteligente
 
 Este projeto consiste no desenvolvimento de um banco de dados para gerenciar informações relacionadas ao controle de estoque de uma loja. Ele foi projetado para manter uma estrutura organizada e eficiente, com funcionalidades que atendem desde o cadastro de produtos até o gerenciamento de vendas.
 
