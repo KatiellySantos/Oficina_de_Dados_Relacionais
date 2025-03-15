@@ -1,9 +1,9 @@
 ```sql
 🎭 Sistema de Gerenciamento de Eventos - Evento360
 
-Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas
-a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada para garantir eficiência
-e organização na gestão de eventos.
+Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações
+relacionadas a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada
+para garantir eficiência e organização na gestão de eventos.
 
 🎟 Estrutura do Banco de Dados
 
@@ -58,11 +58,13 @@ VALUES
 
 Exemplo: Relatório de Inscrições por Evento
 
-SELECT eventos.nome AS evento, participantes.nome AS participante, ingressos.data_compra, ingressos.status_pagamento
+SELECT eventos.nome AS evento, participantes.nome AS participante, ingressos.data_compra,
+ingressos.status_pagamento
 FROM eventos
 INNER JOIN eventos_participantes ON eventos.idevento = eventos_participantes.idevento
 INNER JOIN participantes ON eventos_participantes.idparticipante = participantes.idparticipante
-INNER JOIN ingressos ON ingressos.idevento = eventos.idevento AND ingressos.idparticipante = participantes.idparticipante;
+INNER JOIN ingressos ON ingressos.idevento = eventos.idevento AND ingressos.idparticipante =
+participantes.idparticipante;
 
 Exemplo: Feedbacks Coletados dos Eventos
 
@@ -80,7 +82,8 @@ INNER JOIN participantes ON feedback.idparticipante = participantes.idparticipan
 
 📝 Conclusão
 
-Este sistema foi projetado para facilitar o gerenciamento de eventos, permitindo controle total sobre inscrições,
-vendas, feedbacks e ações do sistema. É uma solução prática e poderosa para qualquer tipo de evento.
+Este sistema foi projetado para facilitar o gerenciamento de eventos, permitindo controle total sobre
+inscrições, vendas, feedbacks e ações do sistema. É uma solução prática e poderosa para qualquer tipo de
+evento.
 
 Contribuições e melhorias são bem-vindas! 😊
