@@ -22,7 +22,7 @@ O banco de dados contém as seguintes tabelas principais:
 Aqui está um exemplo de script SQL para a criação de uma das tabelas:
 
 -- Tabela de eventos
-CREATE TABLE eventos (
+#CREATE TABLE eventos (
     idevento INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     data DATE NOT NULL,
