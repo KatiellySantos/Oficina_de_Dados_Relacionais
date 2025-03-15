@@ -1,8 +1,11 @@
-# 🚛 Sistema de Gerenciamento de Transportes - InfoTransporte
+```sql
+🚛 Sistema de Gerenciamento de Transportes - InfoTransporte
 
-Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas a veículos, motoristas, rotas, viagens e manutenções. A estrutura foi projetada para garantir organização e eficiência nas operações de transporte.
+Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações
+relacionadas a veículos, motoristas, rotas, viagens e manutenções. A estrutura foi projetada para garantir
+organização e eficiência nas operações de transporte.
 
-# 📂 Estrutura do Banco de Dados
+📂 Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
 
@@ -12,9 +15,9 @@ O banco de dados contém as seguintes tabelas principais:
 4. Viagens: Documenta os detalhes das viagens realizadas.
 5. Manutenções: Monitora e registra as manutenções dos veículos.
 
-# 💻 Scripts SQL
+💻 Scripts SQL
 
-# Criação das Tabelas
+Criação das Tabelas
 
 Aqui está um exemplo do script SQL para criar as tabelas:
 
@@ -30,15 +33,16 @@ CREATE TABLE veiculos (
     status VARCHAR(50) 
     );
 
-# Inserção Inicial de Dados
+Inserção Inicial de Dados
 
 -- Tabela Veículos 
 INSERT INTO veiculos (marca, modelo, ano, placa, tipo, capacidade, status) 
 VALUES 
 ('Volkswagen', 'Constellation', 2020, 'ABC1D23', 'Caminhão', 12.5, 'Disponível'), 
-('Mercedes-Benz', 'Sprinter', 2019, 'EFG4H56', 'Van', 4.0, 'Em Manutenção'), ('Scania', 'R450', 2021, 'IJK7L89', 'Caminhão', 18.0, 'Disponível');
+('Mercedes-Benz', 'Sprinter', 2019, 'EFG4H56', 'Van', 4.0, 'Em Manutenção'), ('Scania', 'R450', 2021, 'IJK7L89',
+'Caminhão', 18.0, 'Disponível');
 
-# ⚙️ Funcionalidades
+⚙️ Funcionalidades
 
 1. Gestão de Veículos: Controle completo das informações sobre os veículos.
 2. Gerenciamento de Motoristas: Monitoramento dos dados pessoais e de habilitação dos motoristas.
@@ -46,7 +50,7 @@ VALUES
 4. Planejamento de Viagens: Registro das viagens realizadas e em andamento.
 5. Monitoramento de Manutenções: Controle detalhado das manutenções preventivas e corretivas.
 
-# 🛠 Consultas SQL com JOIN
+🛠 Consultas SQL com JOIN
 
 -- Detalhes completos das viagens
 SELECT viagens.idviagem, rotas.origem, rotas.destino,
@@ -66,12 +70,14 @@ FROM
     manutencoes
 INNER JOIN veiculos ON manutencoes.idveiculo = veiculos.idveiculo;
 
-# 🚀 Como Usar
+🚀 Como Usar
 
 1. Criação do Banco de Dados: Execute os scripts SQL fornecidos para criar e popular as tabelas.
 2. Consultas SQL: Use os exemplos fornecidos para explorar as informações do banco de dados.
 3. Adaptação: Personalize o sistema para atender às suas necessidades específicas.
 
-# 📝 Conclusão
+📝 Conclusão
 
-Este sistema foi projetado para facilitar o gerenciamento de transportes, otimizando o controle de veículos, motoristas, rotas e manutenções. É uma solução eficiente e adaptável para atender às diversas necessidades do setor. Contribuições são bem-vindas! 😊
+Este sistema foi projetado para facilitar o gerenciamento de transportes, otimizando o controle de veículos,
+motoristas, rotas e manutenções. É uma solução eficiente e adaptável para atender às diversas necessidades do
+setor. Contribuições são bem-vindas! 😊
