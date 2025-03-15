@@ -5,7 +5,7 @@ Este projeto consiste no desenvolvimento de um banco de dados robusto para o ger
 a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada para garantir eficiência
 e organização na gestão de eventos.
 
-# 🎟 Estrutura do Banco de Dados
+🎟 Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
 
@@ -18,9 +18,9 @@ O banco de dados contém as seguintes tabelas principais:
 7. Auditoria: Rastreia ações realizadas no sistema.
 8. Eventos Participantes: Controla os participantes inscritos em cada evento.
 
-# 📋 Scripts SQL
+📋 Scripts SQL
 
-# Criação das Tabelas
+Criação das Tabelas
 
 Aqui está um exemplo de script SQL para a criação de uma das tabelas:
 
@@ -37,7 +37,7 @@ CREATE TABLE eventos (
     FOREIGN KEY (criadopor) REFERENCES usuarios(idusuario)
 );
 
-# Inserção Inicial de Dados
+Inserção Inicial de Dados
 
 INSERT INTO eventos (nome, data, local, capacidade, descricao, status, criadopor)
 VALUES
@@ -45,7 +45,7 @@ VALUES
 ('Workshop de Marketing', '2025-05-15', 'Rio de Janeiro, RJ', 50, 'Aprenda estratégias digitais', 'ativo', 2),
 ('Seminário de Segurança', '2025-06-10', 'Brasília, DF', 200, 'Discussão sobre segurança cibernética', 'ativo', 1);
 
-# 🎉 Funcionalidades
+🎉 Funcionalidades
 
 1. Gestão de Usuários: Controle de administradores e organizadores.
 2. Criação de Eventos: Cadastro de eventos e informações detalhadas.
@@ -54,7 +54,7 @@ VALUES
 5. Redes Sociais: Monitoramento das redes sociais associadas aos eventos e usuários.
 6. Auditoria: Rastreamento e histórico de ações no sistema.
 
-# 🔍 Consultas SQL com JOIN
+🔍 Consultas SQL com JOIN
 
 Exemplo: Relatório de Inscrições por Evento
 
@@ -71,14 +71,14 @@ FROM feedback
 INNER JOIN eventos ON feedback.idevento = eventos.idevento
 INNER JOIN participantes ON feedback.idparticipante = participantes.idparticipante;
 
-# 🚀 Como Usar
+🚀 Como Usar
 
 1. Criação do Banco de Dados: Utilize os scripts fornecidos para criar as tabelas.
 2. População de Dados: Insira dados iniciais para testes com as consultas.
 3. Exploração: Experimente as consultas SQL para extrair informações úteis.
 4. Adaptação: Personalize o sistema para suas necessidades específicas de gerenciamento.
 
-# 📝 Conclusão
+📝 Conclusão
 
 Este sistema foi projetado para facilitar o gerenciamento de eventos, permitindo controle total sobre inscrições,
 vendas, feedbacks e ações do sistema. É uma solução prática e poderosa para qualquer tipo de evento.
