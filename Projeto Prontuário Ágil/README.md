@@ -1,8 +1,11 @@
-# 🚑️ Sistema de Registro de Pacientes - Prontuário Ágil
+```sql
+🚑️ Sistema de Registro de Pacientes - Prontuário Ágil
 
-Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas a pacientes, médicos, consultas, exames, pagamentos e histórico médico. A estrutura foi cuidadosamente planejada para garantir organização e eficiência no atendimento clínico.
+Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações
+relacionadas a pacientes, médicos, consultas, exames, pagamentos e histórico médico. A estrutura foi
+cuidadosamente planejada para garantir organização e eficiência no atendimento clínico.
 
-# 📂 Estrutura do Banco de Dados
+📂 Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
 
@@ -16,9 +19,9 @@ O banco de dados contém as seguintes tabelas principais:
 8. Usuários: Controla o acesso ao sistema por diferentes tipos de usuários (administrador, médicos, recepcionistas).
 9. Notificações: Armazena alertas e lembretes.
 
-# 💻 Scripts SQL
+💻 Scripts SQL
 
-# Criação das Tabelas
+Criação das Tabelas
 
 Aqui está um exemplo do script SQL para criar as tabelas:
 
@@ -48,7 +51,7 @@ VALUES
 ('Dr. Roberto Almeida', 'Cardiologia', '123456-CE', '85994567890'),
 ('Dra. Fernanda Costa', 'Pediatria', '654321-CE', '85995678901');
 
-# ⚙️ Funcionalidades
+⚙️ Funcionalidades
 
 1. Gestão de Pacientes: Controle completo de informações de pacientes.
 2. Agendamento de Consultas: Organização eficiente dos agendamentos.
@@ -56,21 +59,23 @@ VALUES
 4. Gestão de Pagamentos: Acompanhamento dos pagamentos realizados.
 5. Notificações: Alertas sobre consultas e exames futuros.
 
-# 🔍 Consultas SQL com JOINs
+🔍 Consultas SQL com JOINs
 
 SELECT p.Nome AS Paciente, c.Data_Consulta, c.Motivo, c.Diagnostico
 FROM Pacientes p
 JOIN Consultas c ON p.ID_Paciente = c.ID_Paciente;
 
-# 🚀 Como Usar
+🚀 Como Usar
 
 1. Clone o repositório e abra os arquivos no sistema de gerenciamento de banco de dados (MySQL ou PostgreSQL).
 2. Execute os scripts SQL fornecidos para criar as tabelas e popular o banco de dados com dados de exemplo.
 3. Utilize as consultas SQL fornecidas para explorar e gerenciar os dados.
 
-# 📝 Conclusão
+📝 Conclusão
 
-Este sistema de gerenciamento foi projetado para atender clínicas e hospitais que buscam uma solução eficiente para organizar informações de pacientes e serviços médicos. Ele pode ser adaptado às necessidades específicas de qualquer instituição.
+Este sistema de gerenciamento foi projetado para atender clínicas e hospitais que buscam uma solução eficiente
+para organizar informações de pacientes e serviços médicos. Ele pode ser adaptado às necessidades específicas de
+qualquer instituição.
 
 Contribuições são bem-vindas! Sinta-se à vontade para colaborar. 😊
 
