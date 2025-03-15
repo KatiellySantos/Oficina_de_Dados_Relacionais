@@ -1,6 +1,9 @@
+```sql
 # 🎭 Sistema de Gerenciamento de Eventos - Evento360
 
-Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada para garantir eficiência e organização na gestão de eventos.
+Este projeto consiste no desenvolvimento de um banco de dados robusto para o gerenciamento de informações relacionadas
+a eventos, participantes, ingressos, organizadores e redes sociais. A estrutura foi projetada para garantir eficiência
+e organização na gestão de eventos.
 
 # 🎟 Estrutura do Banco de Dados
 
@@ -22,7 +25,7 @@ O banco de dados contém as seguintes tabelas principais:
 Aqui está um exemplo de script SQL para a criação de uma das tabelas:
 
 -- Tabela de eventos
-#CREATE TABLE eventos (
+CREATE TABLE eventos (
     idevento INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     data DATE NOT NULL,
@@ -37,7 +40,7 @@ Aqui está um exemplo de script SQL para a criação de uma das tabelas:
 # Inserção Inicial de Dados
 
 INSERT INTO eventos (nome, data, local, capacidade, descricao, status, criadopor)
-VALUES 
+VALUES
 ('Hackathon de Inovação', '2025-05-10', 'São Paulo, SP', 100, 'Competição de desenvolvimento', 'ativo', 1),
 ('Workshop de Marketing', '2025-05-15', 'Rio de Janeiro, RJ', 50, 'Aprenda estratégias digitais', 'ativo', 2),
 ('Seminário de Segurança', '2025-06-10', 'Brasília, DF', 200, 'Discussão sobre segurança cibernética', 'ativo', 1);
@@ -77,6 +80,7 @@ INNER JOIN participantes ON feedback.idparticipante = participantes.idparticipan
 
 # 📝 Conclusão
 
-Este sistema foi projetado para facilitar o gerenciamento de eventos, permitindo controle total sobre inscrições, vendas, feedbacks e ações do sistema. É uma solução prática e poderosa para qualquer tipo de evento.
+Este sistema foi projetado para facilitar o gerenciamento de eventos, permitindo controle total sobre inscrições,
+vendas, feedbacks e ações do sistema. É uma solução prática e poderosa para qualquer tipo de evento.
 
 Contribuições e melhorias são bem-vindas! 😊
