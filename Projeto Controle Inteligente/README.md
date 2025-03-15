@@ -1,9 +1,11 @@
 ```sql
 💡️ Sistema de Gerenciamento de Estoque - Controle Inteligente
 
-Este projeto consiste no desenvolvimento de um banco de dados para gerenciar informações relacionadas ao controle de estoque de uma loja. Ele foi projetado para manter uma estrutura organizada e eficiente, com funcionalidades que atendem desde o cadastro de produtos até o gerenciamento de vendas.
+Este projeto consiste no desenvolvimento de um banco de dados para gerenciar informações relacionadas
+ao controle de estoque de uma loja. Ele foi projetado para manter uma estrutura organizada e eficiente,
+com funcionalidades que atendem desde o cadastro de produtos até o gerenciamento de vendas.
 
-# 📂 Estrutura do Banco de Dados
+📂 Estrutura do Banco de Dados
 
 O banco de dados contém as seguintes tabelas principais:
 
@@ -19,11 +21,12 @@ O banco de dados contém as seguintes tabelas principais:
 10. Histórico de Preços: Registro de alterações nos preços dos produtos.
 11. Log de Ações: Auditoria das ações realizadas no sistema.
 
-# 💻 Scripts SQL
+💻 Scripts SQL
 
-# Criação das Tabelas
+Criação das Tabelas
 
-Os scripts SQL para criar as tabelas foram organizados para garantir a integridade do banco e devem ser executados nesta ordem.
+Os scripts SQL para criar as tabelas foram organizados para garantir a integridade do banco e devem ser
+executados nesta ordem.
 
 Exemplo: Tabela de Produtos
 
@@ -42,7 +45,7 @@ CREATE TABLE Produtos (
     FOREIGN KEY (fornecedor) REFERENCES Fornecedores(id)
 );
 
-# Inserção de Dados
+Inserção de Dados
 
 As tabelas já possuem exemplos de registros iniciais. Exemplo: Inserção na Tabela de Produtos
 
@@ -50,7 +53,7 @@ INSERT INTO Produtos (nome, SKU, categoria_id, preco_venda, preco_custo, estoque
 VALUES
 ('Smartphone X', 'ELE001', 1, 1500.00, 1200.00, 50, 1, NULL, 'Smartphone de última geração');
 
-# ⚙️ Funcionalidades
+⚙️ Funcionalidades
 
 1. Cadastro de Produtos e Categorias: Gerencie facilmente os itens e seus grupos.
 2. Controle de Estoque: Monitore as entradas e saídas, incluindo ajustes manuais.
@@ -58,7 +61,7 @@ VALUES
 4. Relatórios Avançados: Geração de relatórios sobre produtos em falta, mais vendidos, margens de lucro, entre outros.
 5. Auditoria Completa: Histórico de ações dos usuários para rastreamento e segurança.
 
-# 🔍 Consultas SQL com JOINs
+🔍 Consultas SQL com JOINs
 
 1. Listar Produtos e Categorias
 Exibe os produtos com suas categorias associadas.
@@ -83,15 +86,17 @@ SELECT u.nome AS Usuario, l.acao, l.data
 FROM Log_Acoes l
 JOIN Usuarios u ON l.usuario_id = u.id;
 
-# 🚀 Como Usar
+🚀 Como Usar
 
 1. Clone o repositório e abra o script SQL no seu gerenciador de banco de dados (como MySQL).
 2. Crie o banco de dados executando os scripts para criação das tabelas.
 3. Insira os registros de exemplo para popular o sistema.
 4. Utilize as consultas fornecidas para explorar os dados ou crie suas próprias consultas.
 
-# 📝 Conclusão
+📝 Conclusão
 
-O Controle Inteligente foi projetado para otimizar a gestão de estoques com uma abordagem simples, mas altamente eficiente. O sistema pode ser expandido para atender demandas específicas de diferentes tipos de negócios.
+O Controle Inteligente foi projetado para otimizar a gestão de estoques com uma abordagem simples,
+mas altamente eficiente. O sistema pode ser expandido para atender demandas específicas de diferentes
+tipos de negócios.
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
