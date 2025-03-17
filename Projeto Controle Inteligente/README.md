@@ -1,4 +1,4 @@
-
+```sql
 💡️ Sistema de Gerenciamento de Estoque - Controle Inteligente
 
 Este projeto consiste no desenvolvimento de um banco de dados para gerenciar informações relacionadas
@@ -15,7 +15,7 @@ O banco de dados contém as seguintes tabelas principais:
 4. Movimentações: Controle de entrada e saída de produtos.
 5. Usuários: Gerenciamento de usuários do sistema.
 6. Vendas: Registro das vendas realizadas.
-7. Itens_Venda: Relaciona os produtos vendidos em cada transação.
+7. Itens_Venda**: Relaciona os produtos vendidos em cada transação.
 8. Clientes: Cadastro dos clientes da loja.
 9. Configurações: Parâmetros configuráveis do sistema.
 10. Histórico de Preços: Registro de alterações nos preços dos produtos.
