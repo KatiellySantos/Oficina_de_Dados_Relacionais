@@ -1,4 +1,4 @@
-```sql
+
 💡️ Sistema de Gerenciamento de Estoque - Controle Inteligente
 
 Este projeto consiste no desenvolvimento de um banco de dados para gerenciar informações relacionadas
