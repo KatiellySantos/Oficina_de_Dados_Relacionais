@@ -2,6 +2,8 @@
 
 Olá! Eu sou a Katielly, apaixonada por dados e tecnologia, sempre em busca de novas oportunidades para aprimorar minhas habilidades na área de bancos de dados relacionais. Este repositório é uma coleção de projetos que desenvolvi para explorar conceitos importantes e traduzir aprendizados em soluções práticas.
 
+---
+
 Aqui você encontrará exemplos do meu trabalho e do meu comprometimento com a criação de sistemas organizados e eficazes. A cada projeto, busco aplicar o que aprendi e expandir minhas competências, refletindo meu entusiasmo em enfrentar desafios e aprender continuamente.
 
 # 🗂️ Projetos Incluídos
